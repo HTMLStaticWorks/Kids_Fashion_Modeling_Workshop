@@ -220,4 +220,30 @@ document.addEventListener("DOMContentLoaded", () => {
       behavior: "smooth"
     });
   });
+
+  /* =========================================================
+  FAQ ACCORDION TOGGLE
+  ========================================================= */
+  const faqCards = document.querySelectorAll(".faq-card");
+
+  faqCards.forEach((card) => {
+    const questionBtn = card.querySelector(".faq-question");
+    if (!questionBtn) return;
+
+    questionBtn.addEventListener("click", () => {
+      const isOpen = card.classList.contains("open");
+
+      // Accordion toggle: option to close others or toggle current item
+      faqCards.forEach((otherCard) => {
+        if (otherCard !== card) {
+          otherCard.classList.remove("open");
+          const otherBtn = otherCard.querySelector(".faq-question");
+          if (otherBtn) otherBtn.setAttribute("aria-expanded", "false");
+        }
+      });
+
+      card.classList.toggle("open", !isOpen);
+      questionBtn.setAttribute("aria-expanded", !isOpen ? "true" : "false");
+    });
+  });
 });
