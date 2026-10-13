@@ -50,16 +50,20 @@ Kids_Fashion_Modeling_Workshop/
 │   ├── banner-about.jpg
 │   ├── value-encouragement.jpg
 │   ├── value-individuality.jpg
-│   └── banner-contact-store.jpg
+│   ├── banner-contact-store.jpg
+│   ├── trainer-elena-vance.jpg
+│   ├── trainer-marcus-sterling.jpg
+│   ├── trainer-priya-sharma.jpg
+│   └── trainer-chloe-bennett.jpg
 ├── css/
 │   └── style.css            # Centralized stylesheet (Design tokens, Dark Mode, RTL, Grids, Responsive Breakpoints)
 ├── js/
 │   └── script.js            # Shared logic (Theme toggle, RTL toggle, Mobile nav, Scroll animations, Form toast)
-├── index.html               # Home 1 — Main Workshop Landing Page
-├── home2.html               # Home 2 — Studio Experience Page
-├── programs.html            # Programs — Runway, Photo Posing, Etiquette & Presentation
-├── events.html              # Events & Showcases — Mini Fashion Day, Portrait Showcase, Style Showcase
-├── about.html               # About Us — Studio Philosophy, Values, Stats & Approach
+├── index.html               # Home 1 — Main Workshop Landing Page (Highlights, Gallery & Parent Testimonials)
+├── home2.html               # Home 2 — Creative Studio Experience Page (Studio Focus, Walkthrough & Tours)
+├── programs.html            # Programs — Curriculum Tiers, Learning Outcomes & Workshop Programs & Packages
+├── events.html              # Events & Showcases — Seasonal Showcases, Timelines, Preparation & Keepsakes
+├── about.html               # About Us — Studio Philosophy, Core Values & Meet Our Expert Mentors & Trainers
 ├── contact.html             # Contact & Enrollment — Studio details, interactive form, OpenStreetMap embed
 └── README.md                # Project documentation
 ```

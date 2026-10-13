@@ -91,6 +91,22 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   /* =========================================================
+  STICKY/FIXED NAVBAR SCROLL STATE
+  ========================================================= */
+  const navbar = document.querySelector(".navbar");
+  if (navbar) {
+    const handleNavScroll = () => {
+      if (window.scrollY > 20) {
+        navbar.classList.add("scrolled");
+      } else {
+        navbar.classList.remove("scrolled");
+      }
+    };
+    window.addEventListener("scroll", handleNavScroll, { passive: true });
+    handleNavScroll();
+  }
+
+  /* =========================================================
   DARK / LIGHT THEME TOGGLE
   ========================================================= */
   const themeBtn = document.getElementById("themeBtn");
@@ -245,5 +261,48 @@ document.addEventListener("DOMContentLoaded", () => {
       card.classList.toggle("open", !isOpen);
       questionBtn.setAttribute("aria-expanded", !isOpen ? "true" : "false");
     });
+  });
+
+  /* =========================================================
+  PROFILE PORTAL MODAL (Client Point 3)
+  ========================================================= */
+  const profileBtn = document.getElementById("profileBtn");
+  const profileModalOverlay = document.getElementById("profileModal");
+  const profileModalClose = document.getElementById("profileModalClose");
+
+  function openProfileModal() {
+    if (profileModalOverlay) {
+      profileModalOverlay.classList.add("active");
+      document.body.style.overflow = "hidden";
+    }
+  }
+
+  function closeProfileModal() {
+    if (profileModalOverlay) {
+      profileModalOverlay.classList.remove("active");
+      document.body.style.overflow = "";
+    }
+  }
+
+  if (profileBtn) {
+    profileBtn.addEventListener("click", openProfileModal);
+  }
+
+  if (profileModalClose) {
+    profileModalClose.addEventListener("click", closeProfileModal);
+  }
+
+  if (profileModalOverlay) {
+    profileModalOverlay.addEventListener("click", (e) => {
+      if (e.target === profileModalOverlay) {
+        closeProfileModal();
+      }
+    });
+  }
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && profileModalOverlay && profileModalOverlay.classList.contains("active")) {
+      closeProfileModal();
+    }
   });
 });

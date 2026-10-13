@@ -51,13 +51,19 @@
       </div>
       <div class="nav-actions">
         <div class="nav-controls" id="navControls">
-          <button class="icon-btn" id="themeBtn" aria-label="Toggle theme" title="Toggle Theme">
+          <button class="icon-btn profile-control" id="profileBtn" aria-label="Student & Parent Profile Portal" title="Profile Portal">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+              <circle cx="12" cy="7" r="4"/>
+            </svg>
+          </button>
+          <button class="icon-btn rtl-control" id="rtlBtn" aria-label="Toggle RTL" title="Toggle RTL">RTL</button>
+          <button class="icon-btn theme-control" id="themeBtn" aria-label="Toggle theme" title="Toggle Theme">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <circle cx="12" cy="12" r="4"/>
               <path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.65 17.65l1.42 1.42M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.65 6.35l1.42-1.42"/>
             </svg>
           </button>
-          <button class="icon-btn rtl-control" id="rtlBtn" aria-label="Toggle RTL" title="Toggle RTL">RTL</button>
         </div>
         <a class="btn btn-primary nav-cta" href="contact.html">Enquire Now</a>
         <button class="icon-btn mobile-btn" id="mobileBtn" aria-label="Open menu">
@@ -270,6 +276,84 @@
       </div>
     </section>
 
+    <!-- WORKSHOP PROGRAMS PACKAGES SECTION (Client Point 9) -->
+    <section id="packages">
+      <div class="container reveal">
+        <div class="section-head">
+          <span class="eyebrow">Tuition & Inclusions</span>
+          <h2>Workshop Programs & Packages</h2>
+          <p>Choose the ideal learning path for your child. All packages feature small batch sizes, personalized mentor attention, and celebration milestones.</p>
+        </div>
+        <div class="packages-grid">
+          <!-- PACKAGE 1 -->
+          <div class="package-card">
+            <span class="package-level">Level 1 • Foundation</span>
+            <h3 class="package-title">Starter Confidence Workshop</h3>
+            <p class="package-desc">Ideal for young beginners to explore posture, mirror expressions, and comfortable walking rhythms.</p>
+            <div class="package-price-wrap">
+              <div class="package-price">₹4,999 <span>/ 4 Weeks</span></div>
+              <div class="package-price-meta">Ages 4–7 • 8 Interactive Sessions</div>
+            </div>
+            <ul class="package-features">
+              <li><span class="check">✓</span>Posture & balance mirror drills</li>
+              <li><span class="check">✓</span>Gentle runway walking & turns</li>
+              <li><span class="check">✓</span>Camera smile & expression games</li>
+              <li><span class="check">✓</span>Small batch size (max 8 children)</li>
+              <li><span class="check">✓</span>Certificate of participation</li>
+            </ul>
+            <div class="package-action">
+              <a class="btn btn-outline" href="contact.html?package=starter">Enroll In Starter</a>
+            </div>
+          </div>
+
+          <!-- PACKAGE 2 -->
+          <div class="package-card popular">
+            <span class="popular-badge">Most Popular</span>
+            <span class="package-level">Level 2 • Comprehensive</span>
+            <h3 class="package-title">Runway & Posing Pro</h3>
+            <p class="package-desc">Our flagship curriculum combining runway walks, camera angles, styling tips, and studio photoshoots.</p>
+            <div class="package-price-wrap">
+              <div class="package-price">₹8,999 <span>/ 8 Weeks</span></div>
+              <div class="package-price-meta">Ages 8–12 • 16 Intensive Sessions</div>
+            </div>
+            <ul class="package-features">
+              <li><span class="check">✓</span>Everything in Starter Workshop</li>
+              <li><span class="check">✓</span>Professional runway stride & tempo</li>
+              <li><span class="check">✓</span>Studio camera posing with softbox lights</li>
+              <li><span class="check">✓</span>Wardrobe styling & color harmony</li>
+              <li><span class="check">✓</span>Studio photoshoot (5 HD digital portraits)</li>
+              <li><span class="check">✓</span>Official graduation certificate</li>
+            </ul>
+            <div class="package-action">
+              <a class="btn btn-primary" href="contact.html?package=pro">Enroll In Pro Package</a>
+            </div>
+          </div>
+
+          <!-- PACKAGE 3 -->
+          <div class="package-card">
+            <span class="package-level">Level 3 • Showcase & Master</span>
+            <h3 class="package-title">Master Showcase Elite</h3>
+            <p class="package-desc">Advanced performance coaching including microphone speech, portfolio shoots, and spotlight showcase.</p>
+            <div class="package-price-wrap">
+              <div class="package-price">₹13,999 <span>/ 12 Weeks</span></div>
+              <div class="package-price-meta">Ages 10–15 • 24 Master Sessions</div>
+            </div>
+            <ul class="package-features">
+              <li><span class="check">✓</span>Everything in Runway & Posing Pro</li>
+              <li><span class="check">✓</span>Public speaking & microphone introduction</li>
+              <li><span class="check">✓</span>Grand stage showcase presentation</li>
+              <li><span class="check">✓</span>Complete portfolio album (15 HD digital files)</li>
+              <li><span class="check">✓</span>1-on-1 personalized mentor coaching</li>
+              <li><span class="check">✓</span>Showcase trophy & honors certificate</li>
+            </ul>
+            <div class="package-action">
+              <a class="btn btn-outline" href="contact.html?package=elite">Enroll In Elite</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- COLORED AREA ABOVE FOOTER -->
     <section class="page-bottom-section programs-bottom">
       <div class="container bottom-inner reveal">
@@ -398,6 +482,54 @@
       </div>
     </div>
   </footer>
+
+  <!-- =========================================================
+  PROFILE PORTAL MODAL (Dashboard Controls Point 3)
+  ========================================================= -->
+  <div class="profile-modal-overlay" id="profileModal" role="dialog" aria-modal="true" aria-labelledby="profileModalTitle">
+    <div class="profile-modal">
+      <div class="profile-modal-header">
+        <h3 id="profileModalTitle">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+            <circle cx="12" cy="7" r="4"/>
+          </svg>
+          Parent & Student Portal
+        </h3>
+        <button class="profile-modal-close" id="profileModalClose" aria-label="Close Profile Portal">&times;</button>
+      </div>
+      <div class="profile-modal-body">
+        <div class="profile-student-card">
+          <div class="profile-avatar">LV</div>
+          <div class="profile-meta">
+            <strong>Anya & Kabir Sharma</strong>
+            <span>Enrolled • Runway & Posing Pro</span>
+            <div class="profile-status-badge">● Active Workshop Batch</div>
+          </div>
+        </div>
+        <div class="profile-detail-row">
+          <span>Current Session</span>
+          <strong>Week 4: Camera Angles & Poise</strong>
+        </div>
+        <div class="profile-detail-row">
+          <span>Batch Schedule</span>
+          <strong>Saturdays 10:30 AM – 12:00 PM</strong>
+        </div>
+        <div class="profile-detail-row">
+          <span>Lead Mentor</span>
+          <strong>Elena Vance (Runway Coach)</strong>
+        </div>
+        <div class="profile-detail-row">
+          <span>Upcoming Showcase</span>
+          <strong>Spring Showcase Gala (April 2026)</strong>
+        </div>
+      </div>
+      <div class="profile-modal-footer">
+        <a class="btn btn-outline" href="contact.html">Message Mentor</a>
+        <a class="btn btn-primary" href="programs.html">View Schedule</a>
+      </div>
+    </div>
+  </div>
 
   <div id="toast">Enquiry submitted successfully.</div>
   <script src="js/script.js"></script>

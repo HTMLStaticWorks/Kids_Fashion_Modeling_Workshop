@@ -51,13 +51,19 @@
       </div>
       <div class="nav-actions">
         <div class="nav-controls" id="navControls">
-          <button class="icon-btn" id="themeBtn" aria-label="Toggle theme" title="Toggle Theme">
+          <button class="icon-btn profile-control" id="profileBtn" aria-label="Student & Parent Profile Portal" title="Profile Portal">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+              <circle cx="12" cy="7" r="4"/>
+            </svg>
+          </button>
+          <button class="icon-btn rtl-control" id="rtlBtn" aria-label="Toggle RTL" title="Toggle RTL">RTL</button>
+          <button class="icon-btn theme-control" id="themeBtn" aria-label="Toggle theme" title="Toggle Theme">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <circle cx="12" cy="12" r="4"/>
               <path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.65 17.65l1.42 1.42M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.65 6.35l1.42-1.42"/>
             </svg>
           </button>
-          <button class="icon-btn rtl-control" id="rtlBtn" aria-label="Toggle RTL" title="Toggle RTL">RTL</button>
         </div>
         <a class="btn btn-primary nav-cta" href="contact.html">Enquire Now</a>
         <button class="icon-btn mobile-btn" id="mobileBtn" aria-label="Open menu">
@@ -73,23 +79,117 @@
   MAIN CONTENT: HOME 2
   ========================================================= -->
   <main class="page-content">
-    <section class="hero">
-      <div class="hero-media">
-        <img src="images/hero-colorful-outfits.jpg"
-             alt="Children in colorful fashion outfits">
+    <!-- =========================================================
+    DISTINCT HERO SECTION: STUDIO SPLIT EXPERIENCE
+    ========================================================= -->
+    <section class="hero-studio" id="heroStudio">
+      <div class="hero-studio-bg" aria-hidden="true">
+        <div class="hero-studio-glow glow-1"></div>
+        <div class="hero-studio-glow glow-2"></div>
       </div>
-      <div class="hero-overlay"></div>
-      <div class="container">
-        <div class="hero-content">
-          <span class="eyebrow">Studio Experience</span>
-          <h1>Find Their Style. Build Their Confidence.</h1>
-          <p>
-            A creative kids fashion experience combining runway basics,
-            posing, etiquette, styling awareness and showcase preparation.
-          </p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="contact.html">Enquire Today</a>
-            <a class="btn btn-outline" href="events.html">View Showcases</a>
+      <div class="container hero-studio-container">
+        <div class="hero-studio-grid">
+          <!-- LEFT COLUMN: RICH INFORMATIVE CONTENT -->
+          <div class="hero-studio-content">
+            <div class="hero-intake-badge">
+              <span class="pulse-indicator"></span>
+              <span><strong>2026 Studio Registrations Open</strong> • Ages 4–16 Years</span>
+            </div>
+            <h1 class="hero-studio-title">
+              Find Their Style. <br>
+              <span class="hero-gradient-text">Build Unshakeable</span><br class="hero-studio-break-mob"> Confidence.
+            </h1>
+            <p class="hero-studio-lead">
+              A boutique runway & creative fashion experience designed specifically for growing children. We combine runway posture, camera etiquette, wardrobe styling, and positive self-esteem mentoring in a joyful, supportive studio.
+            </p>
+
+            <!-- 4 WORKSHOP PILLARS -->
+            <div class="hero-studio-pillars">
+              <div class="pillar-item">
+                <div class="pillar-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                </div>
+                <span>Runway & Poise</span>
+              </div>
+              <div class="pillar-item">
+                <div class="pillar-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="13" r="4"/><path d="M5 7h1a2 2 0 0 0 2-2V4h8v1a2 2 0 0 0 2 2h1a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2z"/></svg>
+                </div>
+                <span>Camera Posing</span>
+              </div>
+              <div class="pillar-item">
+                <div class="pillar-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20.38 3.46 16 2a4 4 0 0 1-8 0L3.62 3.46a2 2 0 0 0-1.34 2.23l.58 3.47a1 1 0 0 0 .99.84H6v10c0 1.1.9 2 2 2h8a2 2 0 0 0 2-2V10h2.15a1 1 0 0 0 .99-.84l.58-3.47a2 2 0 0 0-1.34-2.23z"/></svg>
+                </div>
+                <span>Wardrobe Styling</span>
+              </div>
+              <div class="pillar-item">
+                <div class="pillar-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                </div>
+                <span>Gala Showcase</span>
+              </div>
+            </div>
+
+            <!-- ACTIONS -->
+            <div class="hero-studio-actions">
+              <a class="hero-btn-main" href="contact.html">
+                <span>Enquire Today & Claim Spot</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="btn-arrow"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+              <a class="hero-btn-sub" href="programs.html#packages">View Packages (From ₹4,999)</a>
+            </div>
+
+            <!-- SOCIAL PROOF & TRUST -->
+            <div class="hero-studio-trust">
+              <div class="trust-avatars" aria-hidden="true">
+                <span class="avatar-circle">🌟</span>
+                <span class="avatar-circle">👧</span>
+                <span class="avatar-circle">🧒</span>
+                <span class="avatar-circle">✨</span>
+              </div>
+              <div class="trust-info">
+                <div class="trust-rating">
+                  <span class="rating-stars" aria-label="5 stars">★★★★★</span>
+                  <span class="rating-score"><strong>4.9 / 5</strong> rating</span>
+                </div>
+                <p class="trust-sub">Trusted by 250+ parents across Melbourne & Sydney</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- RIGHT COLUMN: VISUAL COMPOSITION WITH FLOATING STAT CHIPS -->
+          <div class="hero-studio-visual">
+            <div class="visual-card-wrap">
+              <div class="visual-main-frame">
+                <img src="images/hero-colorful-outfits.jpg"
+                     alt="Children wearing colorful fashion outfits in creative studio workshop"
+                     class="visual-main-img">
+                <div class="visual-card-gradient"></div>
+                <div class="visual-tag-bottom">
+                  <span class="visual-tag-title">Fun • Poise • Creative Freedom</span>
+                  <span class="visual-tag-sub">Tailored age brackets: 4–7, 8–12, 13–16 yrs</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Studio Quick Stats Bar Under Visual -->
+            <div class="hero-studio-stats">
+              <div class="studio-stat">
+                <strong>500+</strong>
+                <span>Kids Mentored</span>
+              </div>
+              <div class="stat-divider"></div>
+              <div class="studio-stat">
+                <strong>12+</strong>
+                <span>Runway Shows</span>
+              </div>
+              <div class="stat-divider"></div>
+              <div class="studio-stat">
+                <strong>100%</strong>
+                <span>Child-Safe Staff</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -439,6 +539,54 @@
       </div>
     </div>
   </footer>
+
+  <!-- =========================================================
+  PROFILE PORTAL MODAL (Dashboard Controls Point 3)
+  ========================================================= -->
+  <div class="profile-modal-overlay" id="profileModal" role="dialog" aria-modal="true" aria-labelledby="profileModalTitle">
+    <div class="profile-modal">
+      <div class="profile-modal-header">
+        <h3 id="profileModalTitle">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+            <circle cx="12" cy="7" r="4"/>
+          </svg>
+          Parent & Student Portal
+        </h3>
+        <button class="profile-modal-close" id="profileModalClose" aria-label="Close Profile Portal">&times;</button>
+      </div>
+      <div class="profile-modal-body">
+        <div class="profile-student-card">
+          <div class="profile-avatar">LV</div>
+          <div class="profile-meta">
+            <strong>Anya & Kabir Sharma</strong>
+            <span>Enrolled • Runway & Posing Pro</span>
+            <div class="profile-status-badge">● Active Workshop Batch</div>
+          </div>
+        </div>
+        <div class="profile-detail-row">
+          <span>Current Session</span>
+          <strong>Week 4: Camera Angles & Poise</strong>
+        </div>
+        <div class="profile-detail-row">
+          <span>Batch Schedule</span>
+          <strong>Saturdays 10:30 AM – 12:00 PM</strong>
+        </div>
+        <div class="profile-detail-row">
+          <span>Lead Mentor</span>
+          <strong>Elena Vance (Runway Coach)</strong>
+        </div>
+        <div class="profile-detail-row">
+          <span>Upcoming Showcase</span>
+          <strong>Spring Showcase Gala (April 2026)</strong>
+        </div>
+      </div>
+      <div class="profile-modal-footer">
+        <a class="btn btn-outline" href="contact.html">Message Mentor</a>
+        <a class="btn btn-primary" href="programs.html">View Schedule</a>
+      </div>
+    </div>
+  </div>
 
   <div id="toast">Enquiry submitted successfully.</div>
   <script src="js/script.js"></script>

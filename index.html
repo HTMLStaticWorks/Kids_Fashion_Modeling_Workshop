@@ -51,13 +51,19 @@
       </div>
       <div class="nav-actions">
         <div class="nav-controls" id="navControls">
-          <button class="icon-btn" id="themeBtn" aria-label="Toggle theme" title="Toggle Theme">
+          <button class="icon-btn profile-control" id="profileBtn" aria-label="Student & Parent Profile Portal" title="Profile Portal">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+              <circle cx="12" cy="7" r="4"/>
+            </svg>
+          </button>
+          <button class="icon-btn rtl-control" id="rtlBtn" aria-label="Toggle RTL" title="Toggle RTL">RTL</button>
+          <button class="icon-btn theme-control" id="themeBtn" aria-label="Toggle theme" title="Toggle Theme">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <circle cx="12" cy="12" r="4"/>
               <path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.65 17.65l1.42 1.42M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.65 6.35l1.42-1.42"/>
             </svg>
           </button>
-          <button class="icon-btn rtl-control" id="rtlBtn" aria-label="Toggle RTL" title="Toggle RTL">RTL</button>
         </div>
         <a class="btn btn-primary nav-cta" href="contact.html">Enquire Now</a>
         <button class="icon-btn mobile-btn" id="mobileBtn" aria-label="Open menu">
@@ -353,6 +359,66 @@
       </div>
     </section>
 
+    <!-- WHAT PARENTS SAY (TESTIMONIALS & REVIEWS SECTION) (Client Point 9 & 10) -->
+    <section id="testimonials">
+      <div class="container reveal">
+        <div class="section-head">
+          <span class="eyebrow">Real Stories & Praise</span>
+          <h2>What Parents Say About Little Vogue</h2>
+          <p>Read firsthand experiences from families who watched their children transform into confident, expressive young personalities.</p>
+        </div>
+        <div class="testimonials-grid">
+          <!-- TESTIMONIAL 1 -->
+          <div class="testimonial-card">
+            <div class="testi-header">
+              <div class="testi-stars">★★★★★</div>
+              <span class="testi-verified">✓ Verified Parent</span>
+            </div>
+            <p class="testi-quote">"My 7-year-old daughter was hesitant to speak in groups before Little Vogue. Within four weeks, she was walking tall, keeping eye contact, and volunteered for her school assembly with zero fear. Elena and the team are extraordinarily gentle and encouraging!"</p>
+            <div class="testi-author">
+              <div class="testi-avatar">SM</div>
+              <div class="testi-meta">
+                <strong>Sunita Mehra</strong>
+                <span>Parent of Anya (Age 7 • Runway Pro)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- TESTIMONIAL 2 -->
+          <div class="testimonial-card">
+            <div class="testi-header">
+              <div class="testi-stars">★★★★★</div>
+              <span class="testi-verified">✓ Verified Parent</span>
+            </div>
+            <p class="testi-quote">"The focus on posture, manners, and natural confidence makes this workshop exceptional. It's not about superficial modeling—it's genuine life skills. Marcus helped my son feel relaxed on camera, and the showcase photos were breathtaking!"</p>
+            <div class="testi-author">
+              <div class="testi-avatar">RK</div>
+              <div class="testi-meta">
+                <strong>Rajesh & Kavita K.</strong>
+                <span>Parents of Kabir (Age 10 • Showcase Elite)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- TESTIMONIAL 3 -->
+          <div class="testimonial-card">
+            <div class="testi-header">
+              <div class="testi-stars">★★★★★</div>
+              <span class="testi-verified">✓ Verified Parent</span>
+            </div>
+            <p class="testi-quote">"As a busy parent, receiving regular mentor notes and seeing my son's smile grow each weekend was heartwarming. He made great friends and learned how to stand with posture and speak into a microphone clearly. Highly recommended!"</p>
+            <div class="testi-author">
+              <div class="testi-avatar">SJ</div>
+              <div class="testi-meta">
+                <strong>Sarah Jenkins</strong>
+                <span>Parent of Leo (Age 6 • Starter Workshop)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- COLORED AREA ABOVE FOOTER -->
     <section class="page-bottom-section home1-bottom">
       <div class="container bottom-inner reveal">
@@ -481,6 +547,54 @@
       </div>
     </div>
   </footer>
+
+  <!-- =========================================================
+  PROFILE PORTAL MODAL (Dashboard Controls Point 3)
+  ========================================================= -->
+  <div class="profile-modal-overlay" id="profileModal" role="dialog" aria-modal="true" aria-labelledby="profileModalTitle">
+    <div class="profile-modal">
+      <div class="profile-modal-header">
+        <h3 id="profileModalTitle">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+            <circle cx="12" cy="7" r="4"/>
+          </svg>
+          Parent & Student Portal
+        </h3>
+        <button class="profile-modal-close" id="profileModalClose" aria-label="Close Profile Portal">&times;</button>
+      </div>
+      <div class="profile-modal-body">
+        <div class="profile-student-card">
+          <div class="profile-avatar">LV</div>
+          <div class="profile-meta">
+            <strong>Anya & Kabir Sharma</strong>
+            <span>Enrolled • Runway & Posing Pro</span>
+            <div class="profile-status-badge">● Active Workshop Batch</div>
+          </div>
+        </div>
+        <div class="profile-detail-row">
+          <span>Current Session</span>
+          <strong>Week 4: Camera Angles & Poise</strong>
+        </div>
+        <div class="profile-detail-row">
+          <span>Batch Schedule</span>
+          <strong>Saturdays 10:30 AM – 12:00 PM</strong>
+        </div>
+        <div class="profile-detail-row">
+          <span>Lead Mentor</span>
+          <strong>Elena Vance (Runway Coach)</strong>
+        </div>
+        <div class="profile-detail-row">
+          <span>Upcoming Showcase</span>
+          <strong>Spring Showcase Gala (April 2026)</strong>
+        </div>
+      </div>
+      <div class="profile-modal-footer">
+        <a class="btn btn-outline" href="contact.html">Message Mentor</a>
+        <a class="btn btn-primary" href="programs.html">View Schedule</a>
+      </div>
+    </div>
+  </div>
 
   <div id="toast">Enquiry submitted successfully.</div>
   <script src="js/script.js"></script>
